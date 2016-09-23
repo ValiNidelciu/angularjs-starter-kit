@@ -1,0 +1,49 @@
+<div class="container">
+<h1 class="text-center">Station list</h1>
+
+
+   
+    
+    
+    
+    <ul class="list-inline text-center">
+        <li ng-repeat="x in vm.list" ng-click="vm.showHistoryF()">
+        <button type="button" class="btn btn-large btn-block btn-default" ng-click="vm.showStations(x)">{{x.stationName}}</button>
+        </li>
+    </ul>
+     <button type="button" class="btn btn-large btn-default" ng-click="vm.showTable=true;vm.showHistory=false" ng-show="vm.show">Real Time</button>
+     
+     <button type="button" class="btn btn-large btn-default" ng-show="vm.show" ng-click="vm.showHistoryF()">History</button>
+     
+    <div ng-show="vm.show" class="box">
+        
+       
+        
+         <table ng-show="vm.showTable">
+            <thead>
+                <tr class="text-center">
+                    <th>Serial Number</th>
+                    <th>Power</th>
+                    <th>eday</th>
+                    <th>etotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="y in vm.stationDetails">
+                    <td>{{y.inventersn}}</td>
+                    <td>{{y.power}}</td>
+                    <td>{{y.eday}}</td>
+                    <td>{{y.etotal}}</td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+ 
+ <canvas style="width:200px;heigth:200px" id="line" class="chart chart-line reports_line_chart" chart-data="vm.lineChart.data"
+                    chart-labels="vm.lineChart.labels" chart-legend="true" chart-series="vm.lineChart.series" ng-show="vm.showHistory">
+</canvas>
+</div>
+
+
+           

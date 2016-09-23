@@ -1,0 +1,19 @@
+.test1 {
+  background-color: white; }
+
+.box {
+  position: relative;
+  border: 1px solid; }
+
+div table {
+  border-collapse: separate;
+  border-spacing: 20px;
+  position: absolute;
+  left: 25%; }
+
+.reports_line_chart {
+  width: 10%;
+  height: 40px;
+  padding: 32px; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3N0ZGluIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksd0JBQXdCLEVBQzNCOztBQUVEO0VBQ0ksbUJBQWtCO0VBQ2xCLGtCQUFrQixFQUNyQjs7QUFFRztFQUNBLDBCQUEwQjtFQUMxQixxQkFBcUI7RUFDckIsbUJBQW1CO0VBQ25CLFVBQVMsRUFFWjs7QUFDRDtFQUNRLFdBQVc7RUFDWCxhQUFhO0VBQ2IsY0FBYyxFQUVyQiIsImZpbGUiOiJpbmRleC5jc3MiLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */
